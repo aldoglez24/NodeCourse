@@ -3,6 +3,9 @@ Tutorial ExpressJs
 https://www.tutorialspoint.com/expressjs/
 Recomendable:
     Instalar nodemon e iniciar con nodemon index
+
+    Capítulo 1 
+    Conceptos básicos de ExpressJs
 */
 
 var express = require('express');// Dependencia para express
@@ -16,7 +19,7 @@ app.get('/', function(req, res){
    res.send("Hello world!"); //Es el método "Callback" que regresará la respuesta con el objeto res, en este caso "Hello world!"
 });
 
-//Método para contestar la dirección "/hello" *1
+//Método para contestar la dirección "/hello"
 app.get('/hello', function(req, res){
     res.send("Hello World2!");
  });
@@ -27,7 +30,7 @@ app.post('/hello', function(req, res){
 });
 
 //Método para escuchar las peticiones app.listen(port, [host], [backlog], [callback]])
-app.listen(9090);//http://localhost:9090
+app.listen(3000);//http://localhost:3000
 
 
 
